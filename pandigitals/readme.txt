@@ -1,8 +1,4 @@
-https://www.reddit.com/r/dailyprogrammer/comments/5z4f3z/20170313_challenge_306_easy_pandigital_roman/
-
-Description
-
-1474
+https://www.reddit.com/r/dailyprogrammer/comments/5z4f3z/20170313_challenge_306_easy_pandigital_roman/Description1474
 
 Description
 
