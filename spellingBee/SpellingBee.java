@@ -17,7 +17,6 @@ public class SpellingBee {
        //horizontal
        for (char[] word : hive) {
            String horizontalHive = new String(word);
-           //count += (int) Arrays.stream(horizontalHive.split("\\.")).filter(s -> s.contains("bee") || s.contains("eeb")).count();
            count += Arrays.stream(horizontalHive.split("\\.")).mapToInt(SpellingBee::beesInString).sum();
        }
 
