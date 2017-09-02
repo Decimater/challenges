@@ -12,6 +12,17 @@ public class SumOfK {
     public static Integer chooseBestSum(int maxDistance, int totalPlacesToVisit, List<Integer> ls) {
         List<Integer> distances = new ArrayList<>(ls);
         distances.removeIf(i -> i == null || i < 0);
+		
+		final boolean cannotVisitAllPoints = totalPlacesToVisit > distances.size();
+        if (cannotVisitAllPoints) {
+          return null;
+        }
+        
+        final boolean sameAmountOfDistancesAndPoints = totalPlacesToVisit == distances.size();
+        if (sameAmountOfDistancesAndPoints) {
+          int totalDistance = distances.stream().mapToInt(Integer::intValue).sum();
+          return totalDistance <= maxDistance ? totalDistance : null;
+        }
         
         //Get all combinations
         Set<String> distinctBinaryCombinations = IntStream.range(1, 1 << distances.size())
