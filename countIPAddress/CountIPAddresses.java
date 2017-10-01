@@ -8,7 +8,7 @@ public class CountIPAddresses {
 	}
 
 	/*
-	*	IP v4 addresses are 32 numbers 4 bytes separated by '.' and are unsigned
+	*	IP v4 addresses are 32 bit numbers 4 bytes separated by '.' and are unsigned
 	*/
 	public static long ipsBetween(String start, String end) {
 		System.out.println("s: " + start + "\te:" + end);
