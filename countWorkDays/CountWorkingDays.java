@@ -38,7 +38,7 @@ public class CountWorkingDays {
         LocalDate endFriday = end
                 .with(lastDayOfMonth())
                 .with(previousOrSame(DayOfWeek.FRIDAY));
-				
+
 		return (WEEKS.between(startMonday, endFriday) +1) * 5;
 	}
 }
